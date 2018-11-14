@@ -12,6 +12,7 @@ Primary use:    MultiPurpose Template
 @import "et-line.css";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Oswald:600');
 
 /*------------------------------------------------------------------
 [Table of contents]
@@ -444,7 +445,7 @@ hr.black{
     letter-spacing: 1px;
 }
 .font-alt{
-    font-family: Dosis, arial, sans-serif;
+    font-family: oswald, arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -1464,7 +1465,7 @@ a.bg-video-button-muted{
 .nav-logo-wrap .logo{
     display: table-cell;
     vertical-align: middle;
-    max-width: 118px;
+    /* max-width: 118px; */
     height: 75px;
     
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
@@ -1482,14 +1483,15 @@ a.bg-video-button-muted{
 }
 .logo,
 a.logo:hover{
-    font-family: Dosis, arial, sans-serif;
-    font-size: 18px;
+    font-family: oswald, arial, sans-serif;
+    font-size: 14px;
     font-weight: 400 !important;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-decoration: none;
     color: rgba(0,0,0, .9);
 }
+
 
 /*
  * Desktop nav
@@ -1502,7 +1504,7 @@ a.logo:hover{
     top: 0;
     left: 0;
     text-align: left;
-    background: rgba(255,255,255, .97);
+    background: rgba(0,0,0, .97);
     
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
     -moz-box-shadow: 0 1px 0 rgba(0,0,0,.05);
@@ -1520,7 +1522,17 @@ a.logo:hover{
 
 .small-height{
     height: 55px !important;
+
 }
+
+.logo-color{
+    color: white !important;
+}
+
+.main-title-color{
+    color: #404040 !important;
+}
+
 .small-height .inner-nav ul li a{
     height: 55px !important;
     line-height: 55px !important;
@@ -1884,7 +1896,7 @@ a.logo:hover{
  */
 
 .main-nav.dark{
-    background-color: rgba(10,10,10, .95);
+    background-color: rgba(08,08,08, .95);
     
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -1918,7 +1930,7 @@ a.logo:hover{
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
-    color: rgba(255,255,255, .9);
+    color: rgba(0,0,0,1);
 }
 
 .main-nav.dark .mn-sub{    
@@ -6452,4 +6464,8 @@ section:hover .small-item-carousel .owl-next{
     .multi-columns-row .col-lg-3:nth-child(4n + 5) { clear: left; }
     .multi-columns-row .col-lg-2:nth-child(6n + 7) { clear: left; }
     .multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
+}
+
+.spacer {
+    margin-bottom: 0 !important;
 }

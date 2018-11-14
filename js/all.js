@@ -190,10 +190,21 @@
                 if ($(window).scrollTop() > 10) {
                     $(".js-transparent").removeClass("transparent");
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").addClass("small-height");
+                    $(".main-title").addClass("main-title-color");
                 }
                 else {
                     $(".js-transparent").addClass("transparent");
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").removeClass("small-height");
+                    $(".main-title").removeClass("main-title-color");
+                }
+
+                if ($(window).scrollTop() > 181) {
+                    $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").addClass("logo-color");
+                    $(".main-title").addClass("main-title-color");
+                }
+                else {
+                    $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").removeClass("logo-color");
+                    $(".main-title").removeClass("main-title-color");
                 }
             
             
@@ -204,11 +215,11 @@
         mobile_nav.click(function(){
         
             if (desktop_nav.hasClass("js-opened")) {
-                desktop_nav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
+                desktop_nav.slideUp("fast", "linear").removeClass("js-opened");
                 $(this).removeClass("active");
             }
             else {
-                desktop_nav.slideDown("slow", "easeOutQuart").addClass("js-opened");
+                desktop_nav.slideDown("fast", "linear").addClass("js-opened");
                 $(this).addClass("active");
                 
                 // Fix for responsive menu
@@ -222,7 +233,7 @@
         
         desktop_nav.find("a:not(.mn-has-sub)").click(function(){
             if (mobile_nav.hasClass("active")) {
-                desktop_nav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
+                desktop_nav.slideUp("fast", "linear").removeClass("js-opened");
                 mobile_nav.removeClass("active");
             }
         });
