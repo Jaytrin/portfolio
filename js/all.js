@@ -198,7 +198,7 @@
                     $(".main-title").removeClass("main-title-color");
                 }
 
-                if ($(window).scrollTop() > 181) {
+                if ($(window).scrollTop() > 212) {
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").addClass("logo-color");
                     $(".main-title").addClass("main-title-color");
                 }
