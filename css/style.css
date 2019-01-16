@@ -6490,3 +6490,28 @@ section:hover .small-item-carousel .owl-next{
 .spacer {
     margin-bottom: 0 !important;
 }
+
+.skill-icon img{
+    height: 15vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.skill-icon h4{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.work-item div a{
+    text-decoration: none;
+    margin-left: 2.5rem;
+    margin-right:2.5rem;
+}
+
+.work-item div{
+    text-align:center;
+}
