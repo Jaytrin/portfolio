@@ -50,6 +50,8 @@
         init_masonry();
     });
     
+
+
     $(window).resize(function(){
         
         init_classic_menu_resize();
