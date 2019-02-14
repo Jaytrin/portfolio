@@ -6515,3 +6515,25 @@ section:hover .small-item-carousel .owl-next{
 .work-item div{
     text-align:center;
 }
+
+.inputError{
+    border: 1px solid red;
+    background-color: #ffb7b7;
+}
+
+.inputSuccess{
+    border: 1px solid green;
+    background-color: #D4FFD3;
+}
+
+.inputErrorMessage{
+    color: red;
+}
+
+.inputSuccessMessage{
+    color: green;
+}
+
+.hideMessage{
+    display: none;
+}

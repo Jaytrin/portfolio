@@ -238,14 +238,15 @@
                         </div>
                                 
                         <div class="skill-icon">
-                            <img src="./images/skill-icons/chrome.svg" alt="Chrome DevTools Logo">
-                            <h4>Chrome DevTools</h4>
-                        </div>
-                                
-                        <div class="skill-icon">
                             <img src="./images/skill-icons/aws.svg" alt="AWS Logo">
                             <h4>AWS</h4>
                         </div>
+
+                        <div class="skill-icon">
+                            <img src="./images/skill-icons/chrome.svg" alt="Chrome DevTools Logo">
+                            <h4>Chrome DevTools</h4>
+                        </div>
+
                     </div>
                 </section>  
 
@@ -319,18 +320,18 @@
                         <li class="work-item mix branding">
                             <a href="portfolio-single-1.html" class="work-lightbox-link mfp-image">
                                 <div class="work-img">
-                                    <img class="work-img" src="images/portfolio/frugal.png" alt="Frugal" />
+                                    <img class="work-img" src="images/portfolio/student-grade-manager.jpeg" alt="Student Grade Manager" />
                                 </div>
                                 <div class="work-intro">
-                                    <h3 class="work-title">Frugal</h3>
+                                    <h3 class="work-title">Student Grade Manager</h3>
                                     <div class="work-descr">
-                                        Expense Tracking and Budgeting Content Management System (CMS)
+                                        Student Grade Management Tool
                                     </div>
                                 </div>
                             </a>
                             <div>
-                                <a href="https://github.com/Jaytrin/ExpenseTracker" target="_blank"><span class="fa fa-github"></span>GitHub</a>
-                                <a href="https://github.com/Jaytrin/ExpenseTracker" target="_blank"><span class="fa fa-play-circle"></span>Coming Soon</a>
+                                <a href="https://github.com/Jaytrin/SGT" target="_blank"><span class="fa fa-github"></span>GitHub</a>
+                                <a href="https://studentgrademanager.jaytrin.com" target="_blank"><span class="fa fa-play-circle"></span>Live</a>
                             </div>
                         </li>
                         <!-- End Work Item 3-->
@@ -339,18 +340,18 @@
                         <li class="work-item mix branding">
                                 <a href="portfolio-single-1.html" class="work-lightbox-link mfp-image">
                                     <div class="work-img">
-                                        <img class="work-img" src="images/portfolio/where2eat.png" alt="Coming Soon" />
+                                        <img class="work-img" src="images/portfolio/frugal.png" alt="Coming Soon" />
                                     </div>
                                     <div class="work-intro">
-                                        <h3 class="work-title">Where2Eat</h3>
+                                        <h3 class="work-title">Frugal</h3>
                                         <div class="work-descr">
-                                            
+                                            Expense Tracking and Budgeting Content Management System (CMS)
                                         </div>
                                     </div>
                                 </a>
                                 <div>
-                                    <a><span class="fa fa-github"></span>Github</a>
-                                    <a><span class="fa fa-play-circle"></span>Coming Soon</a>
+                                    <a href="https://github.com/Jaytrin/ExpenseTracker" target="_blank"><span class="fa fa-github"></span>Github</a>
+                                    <a href="https://github.com/Jaytrin/ExpenseTracker" target="_blank"><span class="fa fa-play-circle"></span>Coming Soon</a>
                                 </div>
                             </li>
                             <!-- End Work Item 4-->
@@ -492,11 +493,23 @@
                                         <!-- Name -->
                                         <div class="form-group">
                                             <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required>
+                                            <div class="nameError inputErrorMessage hideMessage">
+                                                <i class="fas fa-exclamation-circle"></i> Must be between 2 and 20 letters (a-z, A-Z) in length.
+                                            </div>
+                                            <div class="nameSuccess inputSuccessMessage hideMessage">
+                                                <i class="fas fa-check-circle"></i> Requirements met.
+                                            </div>
                                         </div>
                                         
                                         <!-- Email -->
                                         <div class="form-group">
                                             <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required>
+                                            <div class="emailError inputErrorMessage hideMessage">
+                                                <i class="fas fa-exclamation-circle"></i> Please enter a valid email address.
+                                            </div>
+                                            <div class="emailSuccess inputSuccessMessage hideMessage">
+                                                <i class="fas fa-check-circle"></i> Requirements met.
+                                            </div>
                                         </div>
                                         
                                     </div>
@@ -506,6 +519,12 @@
                                         <!-- Message -->
                                         <div class="form-group">                                            
                                             <textarea name="body" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
+                                            <div class="messageError inputErrorMessage hideMessage">
+                                                <i class="fas fa-exclamation-circle"></i> Must be between 2 and 1,000 characters in length.
+                                            </div>
+                                            <div class="messageSuccess inputSuccessMessage hideMessage">
+                                                <i class="fas fa-check-circle"></i> Requirements met.
+                                            </div>
                                         </div>
                                         
                                     </div>
@@ -605,8 +624,10 @@
         <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
         <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
         <script type="text/javascript" src="js/all.js"></script>
-        <!-- <script type="text/javascript" src="js/contact-form.js"></script> -->
-        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>        
+        <script type="text/javascript" src="js/contact-form.js"></script>
+        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>  
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
         
     </body>

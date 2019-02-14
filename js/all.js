@@ -48,36 +48,8 @@
         init_map();
         init_wow();
         init_masonry();
-        callMailHandler();
     });
     
-    function callMailHandler(){
-
-        $("#contact_form").submit(function(e) {
-            e.preventDefault();
-
-            const email = $('input.form-control[name=email]').val();
-            const name = $('input.form-control[name=name]').val();
-            const body = $('textarea.form-control[name=body]').val();
-    
-                $.ajax({
-                    type:'POST',
-                    url: './php/mail_handler.php',
-                    data: {
-                        email: email,
-                        name: name,
-                        body: body
-                    },
-                    dataType: 'json',
-                    success: messageSent()
-                })
-        });
-        
-        };
-
-    function messageSent(){
-        console.log('Message sent');
-    }
 
 
     $(window).resize(function(){
