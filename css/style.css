@@ -6523,7 +6523,7 @@ section:hover .small-item-carousel .owl-next{
 
 .inputSuccess{
     border: 1px solid green;
-    background-color: #D4FFD3;
+    background-color: #f8f9bd;
 }
 
 .inputErrorMessage{
@@ -6536,4 +6536,8 @@ section:hover .small-item-carousel .owl-next{
 
 .hideMessage{
     display: none;
+}
+
+img.loadingGif{
+    height: 20px;
 }

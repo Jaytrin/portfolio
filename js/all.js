@@ -19,6 +19,17 @@
         initWorkFilter();
         init_scroll_navigate();
         
+        $(window).scroll(()=>{
+            if($('.js-opened').length){
+            $('.js-opened').css("display","none");
+            $('.js-opened').removeClass("js-opened");
+        }})
+
+        $(document).click((e)=>{
+            if(!$(e.target).is('i') && !$(e.target).is('a') && $('.js-opened').length){
+                $('.js-opened').css("display","none");
+            }})
+
         $(window).trigger("scroll");
         $(window).trigger("resize");
         
@@ -215,7 +226,7 @@
         // Mobile menu toggle
         
         mobile_nav.click(function(){
-        
+            
             if (desktop_nav.hasClass("js-opened")) {
                 desktop_nav.slideUp("fast", "linear").removeClass("js-opened");
                 $(this).removeClass("active");
