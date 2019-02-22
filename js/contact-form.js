@@ -72,16 +72,17 @@ $(document).ready(callMailHandler);
 
 
 function callMailHandler(){
-    console.log('mail handler called');
     $("#submitBtn").on('click',function(e) {
+        $('img.loadingGif').removeClass('hide');
+        const submittingMessage = `<i class="far fa-envelope"></i> Sending message...`
+        $('.form-tip').text('').append(submittingMessage);
         e.preventDefault();
-        console.log('contact-form linked')
         const email = $('input.form-control[name=email]').val();
         const name = $('input.form-control[name=name]').val();
         const body = $('textarea.form-control[name=body]').val();
 
-        const emailRegex =/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        const nameRegex = /^[a-zA-Z]{2,20}$/;
+        const emailRegex =/^(?![ ])(?!.*[ -]$)(?!.*[ ]{2})(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const nameRegex = /^(?![ -])(?!.*[ -]$)(?!.*[ -]{2})[a-zA-Z \-]{2,20}$/;
         const messageRegex = /^.{2,1000}$/;
 
         const emailCheck = emailRegex.test(email);
@@ -127,10 +128,11 @@ function callMailHandler(){
                     name: name,
                     body: body
                 },
-                dataType: 'json',
-                success: messageSent(),
-                error: ()=>{console.log('error occured in sending mail.');}
-            });
+                success: messageSent,
+                error: messageSendFail
+            }).then(()=>{
+                $('img.loadingGif').addClass('hide');
+            })
         } else {
             messageFail();
         }
@@ -145,7 +147,6 @@ function messageSent(){
     $('.form-tip').text('').append(successMessage).css('color','green');
     $('#contact_form input').val('');
     $('#contact_form textarea').val('');
-    console.log('Message sent');
     $('.inputSuccessMessage').addClass('hideMessage');
     $('.inputErrorMessage').addClass('hideMessage');
     $('#name').removeClass('inputError');
@@ -156,5 +157,11 @@ function messageSent(){
 
 function messageFail(){
     const failedMessage = `<i class="fas fa-exclamation-circle"></i> Please check your inputs.`;
+    $('.form-tip').text('').append(failedMessage).css('color','red');
+    $('img.loadingGif').addClass('hide');
+}
+
+function messageSendFail(){
+    const failedMessage = `<i class="fas fa-exclamation-circle"></i> Message Failed to send. Please feel free to reach out at contact@jaytrin.com.`;
     $('.form-tip').text('').append(failedMessage).css('color','red');
 }
