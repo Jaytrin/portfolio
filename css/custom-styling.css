@@ -1,0 +1,74 @@
+.m-0 {
+    margin: 0;
+}
+
+.portfolio-image{
+    padding: 5px;
+}
+
+.p-0{
+    padding: 0;
+}
+
+.technologies{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.custom-link{
+    text-decoration: none;
+}
+
+.height-match{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.bottom-right{
+    position:absolute; 
+    bottom:0;  
+    margin-bottom:7px; 
+    margin:7px; 
+    right: 0;
+}
+
+.black{
+    background-color: black !important;
+    border-color: black;
+    color: white !important;
+}
+
+.grey{
+    background-color: white !important;
+    border-color: black;
+    color: black !important;
+}
+
+.project-title{
+    font-weight: bold;
+    color: black;
+}
+
+.project-tagline{
+    font-style: italic;
+    font-weight: bold;
+    color: #898989;
+}
+
+.mb-1{
+    margin-bottom: 5px;
+}
+
+.mt-1{
+    margin-top: 5px;
+}
+
+.mt-2{
+    margin-top: 10px;
+}
+
+.mt-3{
+    margin-top: 15px;
+}
