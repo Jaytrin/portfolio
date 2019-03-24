@@ -72,3 +72,11 @@
 .mt-3{
     margin-top: 15px;
 }
+
+.hide-text {
+    display: none !important;
+}
+
+.about-me-text{
+    font-size: 16px;
+}
