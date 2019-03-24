@@ -1918,8 +1918,9 @@ a.logo:hover{
  */
 
 .main-nav.dark{
-    background-color: rgba(0,0,0, .95);
-    
+    /* background-color: rgba(0,0,0, .95); */
+    /* background-image: url('../images/portfolio/test1.jpg');
+    background-size: cover; */
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow:  none;
@@ -1952,7 +1953,7 @@ a.logo:hover{
     font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
-    color: rgba(0,0,0,1);
+    color: rgba(0,0,0,0);
 }
 
 .main-nav.dark .mn-sub{    
