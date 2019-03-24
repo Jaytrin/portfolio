@@ -60,6 +60,7 @@
         init_wow();
         init_masonry();
         originBtnHandler();
+        audioHandler();
     });
     
 
@@ -78,14 +79,21 @@
             console.log('btn running');
             $('#origin-text').toggleClass('hide-text');
             if($('#origin-text').hasClass('hide-text')){
-                $('#origin-story').text('Show Origin Story')
+                $('#origin-story').text('Origin Story')
             } else{
-                $('#origin-story').text('Hide Origin Story')
+                $('#origin-story').text('Show Less')
             }
 
         })
     }
     
+    function audioHandler(){
+        $('.fa-volume-up').on('click',()=>{
+            var audio = document.getElementById("audio-name");
+            audio.play();
+        })
+    }
+
     /* --------------------------------------------
      Platform detect
      --------------------------------------------- */
@@ -212,7 +220,12 @@
         }
         
         $(window).scroll(function(){        
+            var top = $(".home-section").offset().top;
+            var height = $(".home-section").outerHeight()
+            var titleTop = $(".main-title").offset().top;
+            var titleHeight = $("main-title").outerHeight()
             
+
                 if ($(window).scrollTop() > 10) {
                     $(".js-transparent").removeClass("transparent");
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").addClass("small-height");
@@ -224,13 +237,23 @@
                     $(".main-title").removeClass("main-title-color");
                 }
 
-                if ($(window).scrollTop() > 212) {
+                if ($(window).scrollTop() > (titleTop + titleHeight)) {
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").addClass("logo-color");
                     $(".main-title").addClass("main-title-color");
                 }
                 else {
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").removeClass("logo-color");
                     $(".main-title").removeClass("main-title-color");
+                }
+
+
+                if ($(window).scrollTop() > (top+height-5)) {
+                    $(".nav-logo-wrap .logo").addClass("building-bg");
+                    $(".main-nav").addClass("building-bg-nav");
+                }
+                else {
+                    $(".nav-logo-wrap .logo, .main-nav").removeClass("building-bg");
+                    $(".main-nav").removeClass("building-bg-nav");
                 }
             
             

@@ -80,3 +80,31 @@
 .about-me-text{
     font-size: 16px;
 }
+
+.home-section, .about-section, .skills-section{
+    background-color: #f8f8f8;
+}
+
+.building-bg{
+    background-image: url('../images/portfolio/background1.jpg');
+    background-size: cover;
+}
+
+.building-bg-nav{
+    background-image: url('../images/portfolio/background1.jpg');
+    background-size: fill;
+    background-repeat: none;
+}
+
+.word-origin {
+    font-style: italic;
+    color: #898989;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+i.fa-volume-up{
+    cursor: pointer;
+}
