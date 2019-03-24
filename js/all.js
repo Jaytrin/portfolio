@@ -60,6 +60,7 @@
         init_wow();
         init_masonry();
         originBtnHandler();
+        audioHandler();
     });
     
 
@@ -86,6 +87,13 @@
         })
     }
     
+    function audioHandler(){
+        $('.fa-volume-up').on('click',()=>{
+            var audio = document.getElementById("audio-name");
+            audio.play();
+        })
+    }
+
     /* --------------------------------------------
      Platform detect
      --------------------------------------------- */

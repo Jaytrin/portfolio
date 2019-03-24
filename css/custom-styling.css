@@ -104,3 +104,7 @@
 .bold{
     font-weight: bold;
 }
+
+i.fa-volume-up{
+    cursor: pointer;
+}
