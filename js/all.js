@@ -15,6 +15,7 @@
             $(".page-loader").delay(200).fadeOut("slow");
         });
         
+
         
         initWorkFilter();
         init_scroll_navigate();
@@ -44,7 +45,6 @@
     });
     
     $(document).ready(function(){
-        
         $(window).trigger("resize");            
         init_classic_menu();
         init_fullscreen_menu();
@@ -59,6 +59,7 @@
         init_map();
         init_wow();
         init_masonry();
+        originBtnHandler();
     });
     
 
@@ -72,6 +73,18 @@
         
     });
     
+    function originBtnHandler(){
+        $('#origin-story').on('click',()=> {
+            console.log('btn running');
+            $('#origin-text').toggleClass('hide-text');
+            if($('#origin-text').hasClass('hide-text')){
+                $('#origin-story').text('Show Origin Story')
+            } else{
+                $('#origin-story').text('Hide Origin Story')
+            }
+
+        })
+    }
     
     /* --------------------------------------------
      Platform detect
