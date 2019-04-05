@@ -48,13 +48,12 @@
 
 .project-title{
     font-weight: bold;
-    color: black;
+    color: #4c4b4f;
 }
 
 .project-tagline{
-    font-style: italic;
     font-weight: bold;
-    color: #898989;
+    color: #d4a34e;
 }
 
 .mb-1{
@@ -83,22 +82,12 @@
 
 .home-section, .about-section, .skills-section{
     background-color: #f8f8f8;
-}
-
-.building-bg{
-    background-image: url('../images/portfolio/background1.jpg');
-    background-size: cover;
-}
-
-.building-bg-nav{
-    background-image: url('../images/portfolio/background1.jpg');
     background-size: fill;
-    background-repeat: none;
 }
 
 .word-origin {
     font-style: italic;
-    color: #898989;
+    color: #4c4b4f;
 }
 
 .bold{
@@ -107,4 +96,35 @@
 
 i.fa-volume-up{
     cursor: pointer;
+}
+
+.main-title{
+    color: #4c4b4f;
+}
+
+.home-text{
+    text-align: left;
+}
+
+#home{
+    background-image: url('/images/portfolio/portfolio_background.jpg');
+    background-position: 50% 0px;
+    background-size: cover;
+}
+
+.transparent div div ul li a{
+    color: #d4a34e !important;
+}
+
+.mobile-nav  ul li a, .desktop-nav ul li a{
+    color: #d4a34e !important;
+}
+
+.main-nav{
+    background-color: white;
+    border-bottom: 1px solid #7575751f;
+}
+
+.mobile-on a.logo{
+    font-size: 14px !important;
 }

@@ -360,8 +360,8 @@ img:not([draggable]), embed, object, video{
 
 body{
     color: #111;
-    font-size: 14px;
-    font-family: "Open Sans", arial, sans-serif;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;    
     -webkit-font-smoothing: antialiased;
 }
@@ -446,7 +446,7 @@ hr.black{
     letter-spacing: 1px;
 }
 .font-alt{
-    font-family: oswald, arial, sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -1030,7 +1030,8 @@ a.btn-mod:focus{
 .home-text{
     display: table-cell;
     height: 100%;
-    vertical-align: middle;
+    vertical-align: top;
+    padding-top: 15rem;
 }
 
 /* Scroll down icon */
@@ -1287,7 +1288,7 @@ a.bg-video-button-muted{
     margin-top: 0;
     position: relative;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.3em;
     line-height: 1.2;
     opacity: .75;
@@ -1333,11 +1334,12 @@ a.bg-video-button-muted{
     margin-top: 0;
     position: relative;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.3em;
     line-height: 1.8;
-    opacity: .9;
+    /* opacity: .9; */
+    
 }
 .hs-line-12{
     margin-top: 0;
@@ -1505,13 +1507,13 @@ a.bg-video-button-muted{
 }
 .logo,
 a.logo:hover{
-    font-family: oswald, arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 400 !important;
+    font-weight: 900 !important;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
     text-decoration: none;
-    color: rgba(0,0,0, .9);
+    color: #4c4b4f;
 }
 
 
@@ -1526,7 +1528,8 @@ a.logo:hover{
     top: 0;
     left: 0;
     text-align: left;
-    background: rgba(0,0,0, .97);
+    background: white
+    color: #828286;
     
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
     -moz-box-shadow: 0 1px 0 rgba(0,0,0,.05);
@@ -1548,7 +1551,7 @@ a.logo:hover{
 }
 
 .logo-color{
-    color: white !important;
+    color: #4c4b4f !important;
 }
 
 .main-title-color{
@@ -1755,7 +1758,7 @@ a.logo:hover{
 .mobile-on .desktop-nav ul{
     width: 100%;
     float: none;
-    background: rgba(18,18,18, .97);
+    background: rgb(255, 255, 255);
     position: relative;
     overflow-x: hidden;
 }
@@ -1769,7 +1772,7 @@ a.logo:hover{
 }
 .mobile-on .desktop-nav ul li ul{
     padding: 0;
-    border-bottom: 1px solid rgba(255,255,255, .1);
+    border-bottom: 1px solid rgba(0,0,0, .1);
 }
 .mobile-on .desktop-nav ul li a{
     display: block;
@@ -1784,7 +1787,7 @@ a.logo:hover{
     text-align: left;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid rgba(255,255,255, .065);
+    border-bottom: 1px solid rgba(0,0,0, .065);
     color: #999;
     letter-spacing: 1px;
     cursor: pointer;
@@ -2398,10 +2401,10 @@ a.logo:hover{
     background-repeat: no-repeat;
     background-position: center center;
     
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: fill;
+    -moz-background-size: fill;
+    -o-background-size: fill;
+    background-size: fill;
     
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

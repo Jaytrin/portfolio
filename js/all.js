@@ -76,7 +76,6 @@
     
     function originBtnHandler(){
         $('#origin-story').on('click',()=> {
-            console.log('btn running');
             $('#origin-text').toggleClass('hide-text');
             if($('#origin-text').hasClass('hide-text')){
                 $('#origin-story').text('Origin Story')
@@ -244,16 +243,6 @@
                 else {
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").removeClass("logo-color");
                     $(".main-title").removeClass("main-title-color");
-                }
-
-
-                if ($(window).scrollTop() > (top+height-5)) {
-                    $(".nav-logo-wrap .logo").addClass("building-bg");
-                    $(".main-nav").addClass("building-bg-nav");
-                }
-                else {
-                    $(".nav-logo-wrap .logo, .main-nav").removeClass("building-bg");
-                    $(".main-nav").removeClass("building-bg-nav");
                 }
             
             
