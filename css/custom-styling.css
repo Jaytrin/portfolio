@@ -110,6 +110,7 @@ i.fa-volume-up{
     background-image: url('/images/portfolio/portfolio_background.jpg');
     background-position: 50% 0px;
     background-size: cover;
+    z-index: -2;
 }
 
 .transparent div div ul li a{
