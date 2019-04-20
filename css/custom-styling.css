@@ -129,3 +129,33 @@ i.fa-volume-up{
 .mobile-on a.logo{
     font-size: 14px !important;
 }
+
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: darkslateblue;
+        position: absolute;
+        top: 54px;
+        left: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .navbar-collapse.collapsing {
+        height: auto !important;
+        margin-left: 50%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .navbar-collapse.show {
+        left: 0;
+    }
+    .navbar-collapse.show ul li a{
+      color: white !important;
+      font-weight: bold;
+      text-align: center;
+  }
+}
