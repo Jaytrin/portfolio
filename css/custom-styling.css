@@ -184,35 +184,59 @@ i.fa-volume-up{
 }
 
 
-@media (max-width: 992px) {
-    .navbar-collapse {
-        background-color: darkslateblue;
-        position: absolute;
-        top: 54px;
-        left: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        width: 100%;
-        transition: all 0.3s ease;
-        display: block;
-    }
-    .navbar-collapse.collapsing {
-        height: auto !important;
-        margin-left: 50%;
-        transition: all 0.3s ease;
-        display: block;
-    }
-    .navbar-collapse.show {
-        left: 0;
-    }
-    .navbar-collapse.show ul li a{
-      color: white !important;
-      font-weight: bold;
-      text-align: center;
-  }
-}
-
 #contact{
     margin-bottom: 140px;
+}
+
+/* .fa.fa-bars {
+    position: relative;
+    z-index: 1000
+} */
+
+/* .inner-nav.desktop-nav.js-opened{
+    display: block;
+    background-color: black
+} */
+
+@media (max-width: 1150px) {
+    .main-title{
+        width: 60%
+    }
+  }
+
+@media (max-width: 945px) {
+.main-title div span b{
+    font-size: 2.5rem;
+}
+}
+
+@media (max-width: 725px) {
+    .main-title{
+        width: 80%
+    }
+
+    .main-title div span b{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-title{
+        width: 95%
+    }
+
+    .main-title div span b{
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .main-title{
+        width: 95%
+    }
+
+    .main-title div span b{
+        font-size: 1.5rem;
+    }
 }

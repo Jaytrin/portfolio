@@ -1758,7 +1758,7 @@ a.logo:hover{
 .mobile-on .desktop-nav ul{
     width: 100%;
     float: none;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255,.95);
     position: relative;
     overflow-x: hidden;
 }
@@ -1936,6 +1936,11 @@ a.logo:hover{
     color: #fff;
 }
 
+.js-opened ul > li > a,
+.js-opened ul > li > a{
+    color: black !important;
+}
+
 .main-nav.dark .mobile-nav{
     background-color: transparent;
     border-color: transparent;
@@ -1946,9 +1951,9 @@ a.logo:hover{
     color: #fff;
 }
 
-.main-nav.mobile-on.dark .inner-nav{
+/* .main-nav.mobile-on.dark .inner-nav{
     border-top: 1px solid rgba(100,100,100, .4);
-}
+} */
 
 .main-nav.dark .logo,
 .main-nav.dark a.logo:hover{
