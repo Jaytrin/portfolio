@@ -99,31 +99,84 @@ i.fa-volume-up{
 }
 
 .main-title{
-    color: #4c4b4f;
+    position: absolute;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    z-index: -1;
+    width: 50%;
+    margin-left: 0;
+    margin-top: 2%;
+    padding: 5%;
+    text-transform: initial;
+    letter-spacing: .5rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    left:0;
+}
+
+.slide-right{
+    animation: slideRight .75s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation:slideRight .75s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+    from {left:-1000px}
+    to {left:0 !important}
+  }
+
+.slide-left{
+    animation: slideLeft .75s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation:slideLeft .75s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft {
+    from {left:0}
+    to {left:-1000px}
+  }
+
+.cd-words-wrapper{
+    width: 100%;
+    z-index: 0;
+}
+
+.home-content{
+/*  */
 }
 
 .home-text{
     text-align: left;
+    height: 100%;
 }
 
 #home{
-    background-image: url('/images/portfolio/portfolio_background.jpg');
+    background-image: url('/images/backgrounds/mountain-lake.jpeg');
     background-position: 50% 0px;
     background-size: cover;
     z-index: -2;
 }
 
-.transparent div div ul li a{
+/* .transparent div div ul li a{
     color: #d4a34e !important;
 }
 
 .mobile-nav  ul li a, .desktop-nav ul li a{
     color: #d4a34e !important;
-}
+} */
 
 .main-nav{
-    background-color: white;
-    border-bottom: 1px solid #7575751f;
+    background-color: black;
 }
 
 .mobile-on a.logo{

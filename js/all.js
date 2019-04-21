@@ -228,12 +228,13 @@
                 if ($(window).scrollTop() > 10) {
                     $(".js-transparent").removeClass("transparent");
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").addClass("small-height");
-                    $(".main-title").addClass("main-title-color");
+                    $(".main-title").addClass("main-title-color slide-left");
                 }
                 else {
                     $(".js-transparent").addClass("transparent");
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").removeClass("small-height");
-                    $(".main-title").removeClass("main-title-color");
+                    $(".main-title").removeClass("main-title-color slide-left");
+                    $(".main-title").addClass("main-title-color slide-right");
                 }
 
                 if ($(window).scrollTop() > (titleTop + titleHeight)) {
