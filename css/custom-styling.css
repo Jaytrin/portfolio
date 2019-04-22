@@ -80,10 +80,45 @@
     font-size: 16px;
 }
 
-.home-section, .about-section, .skills-section{
+/* .home-section, .about-section, .skills-section{
     background-color: #f8f8f8;
     background-size: fill;
+} */
+
+.profile-circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('/images/professional/profile-pic.jpg');
+    background-size: initial;
 }
+
+
+.image-container{
+    text-align: center;
+}
+
+.professional-image{
+    display: inline;
+}
+
+div.about-section{
+    width : 100%;
+    height: 100%;
+}
+
+div.about-section::after {
+    content: "";
+    background: url('/images/backgrounds/forest.jpeg');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
 
 .word-origin {
     font-style: italic;
@@ -126,7 +161,7 @@ i.fa-volume-up{
 }
 
 @keyframes slideRight {
-    from {left:-1000px}
+    from {left:-2000px}
     to {left:0 !important}
   }
 
@@ -143,7 +178,7 @@ i.fa-volume-up{
 
 @keyframes slideLeft {
     from {left:0}
-    to {left:-1000px}
+    to {left:-2000px}
   }
 
 .cd-words-wrapper{
@@ -164,7 +199,7 @@ i.fa-volume-up{
     background-image: url('/images/backgrounds/mountain-lake.jpeg');
     background-position: 50% 0px;
     background-size: cover;
-    z-index: -2;
+    z-index: 0;
 }
 
 /* .transparent div div ul li a{
