@@ -676,9 +676,12 @@ xslide
 xclip 
 
 -------------------------------- */
+
 .cd-headline.clip span {
   display: inline-block;
-  padding: .2em 0;
+  padding: .1em 0;
+  width: 100%;
+  text-align: center;
 }
 .cd-headline.clip .cd-words-wrapper {
   overflow: hidden;
@@ -690,9 +693,8 @@ xclip
   position: absolute;
   top: 0;
   right: 0;
-  width: 2px;
+  width: 1px;
   height: 100%;
-  background-color: #aebcb9;
 }
 .cd-headline.clip b {
   opacity: 0;

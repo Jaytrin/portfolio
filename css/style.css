@@ -1509,9 +1509,9 @@ a.bg-video-button-muted{
 a.logo:hover{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 900 !important;
+    /* font-weight: 900 !important; */
     text-transform: uppercase;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     text-decoration: none;
     color: #4c4b4f;
 }
@@ -1551,7 +1551,7 @@ a.logo:hover{
 }
 
 .logo-color{
-    color: #4c4b4f !important;
+    color: white !important;
 }
 
 .main-title-color{
@@ -1758,7 +1758,7 @@ a.logo:hover{
 .mobile-on .desktop-nav ul{
     width: 100%;
     float: none;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255,.95);
     position: relative;
     overflow-x: hidden;
 }
@@ -1936,6 +1936,11 @@ a.logo:hover{
     color: #fff;
 }
 
+.js-opened ul > li > a,
+.js-opened ul > li > a{
+    color: black !important;
+}
+
 .main-nav.dark .mobile-nav{
     background-color: transparent;
     border-color: transparent;
@@ -1946,14 +1951,13 @@ a.logo:hover{
     color: #fff;
 }
 
-.main-nav.mobile-on.dark .inner-nav{
+/* .main-nav.mobile-on.dark .inner-nav{
     border-top: 1px solid rgba(100,100,100, .4);
-}
+} */
 
 .main-nav.dark .logo,
 .main-nav.dark a.logo:hover{
     font-size: 18px;
-    font-weight: 800;
     text-transform: uppercase;
     text-decoration: none;
     color: rgba(0,0,0,0);
